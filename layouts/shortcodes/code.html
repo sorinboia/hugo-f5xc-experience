@@ -1,0 +1,34 @@
+<script type="text/javascript">    
+        function toggle_visibility(el) {
+           const e = el.nextSibling.nextSibling.nextSibling.nextSibling;             
+           if(e.style.display == 'none') {
+              el.innerHTML = 'Hide';  
+              e.style.display = 'block';
+           }
+           else {
+              el.innerHTML = 'Show';  
+              e.style.display = 'none';
+           }              
+        }
+        function cp_to_clip(el) {
+            const e = el.nextSibling.nextSibling.children[0];
+            console.log(e.textContent);
+            navigator.clipboard.writeText(e.textContent);
+            
+
+
+        }
+</script>
+<div>
+    <button onclick="toggle_visibility(this)" >
+        Show
+    </button>
+    <button onclick="cp_to_clip(this)">
+        Copy code
+    </button>          
+    <pre style="display:none">
+    <code>                
+        {{ .Inner | htmlUnescape }}
+    </code>
+</pre>
+</div>
