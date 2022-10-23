@@ -20,13 +20,14 @@
         }
 </script>
 <div>
+    <h1>{{ .Site.Author }}</h1>
     <button onclick="toggle_visibility(this)" >
         Show
     </button>
     <button onclick="cp_to_clip(this)">
         Copy code
     </button>          
-    <pre style="display:none">
+    <pre style="display:none">    
     <code>                
         {{ .Inner | htmlUnescape }}
     </code>
