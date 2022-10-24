@@ -22,5 +22,5 @@ F5 site: ams9-ams
 [Go Back]
 ```
 
-2. Lets look at the logs and understand why the request has been blocked
+3. Lets look at the logs and understand why the request has been blocked
 ![](/images/5/Slide7.PNG)
