@@ -6,7 +6,7 @@ weight = 30
 
 
 1. First lets try and attack our application with a XSS attack using the following URL  
-`https://studentx.vltr.nginx-experience.com/?a=%3Cscript%3Ealert(%27xss%27)`  
+`https://::makeid::.sales-public.f5demos.com/?a=%3Cscript%3Ealert(%27xss%27)`  
 You will receive a response as seen bellow. Copy the support ID, this will allow us to understand why the request has beeמ blocked.
 
 ```
