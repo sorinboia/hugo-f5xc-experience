@@ -1,5 +1,5 @@
 +++
-title = "Load balancer onprem"
+title = "Load balancer onprem CE"
 weight = 20
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Inter DC communication"
-weight = 20
+weight = 40
 +++
 
 1. Create the internal LB
