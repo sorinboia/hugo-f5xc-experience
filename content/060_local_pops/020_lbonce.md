@@ -89,6 +89,8 @@ weight = 20
     "active_service_policies": {
       "policies": [
         {
+          "tenant": "f5-sales-public-qdpwiibg",
+          "namespace": "::namespace::",
           "name": "arcadia-api-enforcer",
           "kind": "service_policy"
         }
