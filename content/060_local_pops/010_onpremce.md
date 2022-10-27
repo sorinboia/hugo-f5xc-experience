@@ -81,6 +81,7 @@ weight = 10
     "same_as_endpoint_port": {},
     "healthcheck": [
       {
+        "namespace": "::namespace::",
         "name": "http-hc",
         "kind": "healthcheck"
       }
