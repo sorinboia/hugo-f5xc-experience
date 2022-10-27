@@ -3,8 +3,9 @@ title = "Inter DC communication"
 weight = 40
 +++
 
-1. Create the internal LB
+1. Create the **internal Load Balancer** which will route the traffic from the AWS site **Stock transaction** service to the onprem **Users** service
 
+![](/images/6/Slide4.PNG)
 
 {{< code >}}
 {
@@ -66,3 +67,9 @@ weight = 40
   }
 }
 {{< /code >}}
+
+2. Go ahead and verify that you can buy/sell crypto currency.
+
+3. Go to the **"arcadia-aws-to-onprem" Load Balancer** statistics and observe that the inter sites communication is fully visible.
+
+![](/images/6/Slide7.PNG)
