@@ -64,6 +64,7 @@ weight = 20
     "default_route_pools": [
       {
         "pool": {
+          "namespace": "::namespace::",
           "name": "arcadia-onprem-origin-pool",
           "kind": "origin_pool"
         },
@@ -74,6 +75,7 @@ weight = 20
     ],
     "routes": [],
     "app_firewall": {
+      "namespace": "::namespace::",
       "name": "arcadia-waf",
       "kind": "app_firewall"
     },
@@ -109,6 +111,7 @@ weight = 20
     },
     "disable_bot_defense": {},
     "api_definition": {
+      "namespace": "::namespace::",
       "name": "arcadia-api-definition",
       "kind": "api_definition"
     },
