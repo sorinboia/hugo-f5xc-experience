@@ -3,8 +3,8 @@ title = "Load balancer onprem CE"
 weight = 20
 +++
 
-1. Publish the LB
-![](/images/6/Slide1.PNG)
+1. Publish the LB directly on the on prem CE
+![](/images/6/Slide4.PNG)
 
 {{< code >}}
 {
@@ -130,3 +130,9 @@ weight = 20
   }
 }
 {{< /code >}}
+
+2. Browse to `https://::acradiaCe::` . This is the domain name that points directly to the on prem CE.
+
+3. Now you can rerun the securty tests and observe that the same level of protection is enabled even when we publish the Load Balancer on the on prem CE
+WAF - `https://::acradiaCe::/?a=%3Cscript%3Ealert(%27xss%27)`   
+API Protection - `https://::acradiaCe::/v1/notanactualapi`
