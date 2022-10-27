@@ -52,6 +52,7 @@ weight = 20
           "site": {
             "network": "SITE_NETWORK_INSIDE_AND_OUTSIDE",
             "site": {
+              "tenant": "f5-sales-public-qdpwiibg",
               "namespace": "system",
               "name": "::ceOnPrem::",
               "kind": "site"
@@ -64,6 +65,7 @@ weight = 20
     "default_route_pools": [
       {
         "pool": {
+          "tenant": "f5-sales-public-qdpwiibg",
           "namespace": "::namespace::",
           "name": "arcadia-onprem-origin-pool",
           "kind": "origin_pool"
@@ -75,6 +77,7 @@ weight = 20
     ],
     "routes": [],
     "app_firewall": {
+      "tenant": "f5-sales-public-qdpwiibg",
       "namespace": "::namespace::",
       "name": "arcadia-waf",
       "kind": "app_firewall"
@@ -111,6 +114,7 @@ weight = 20
     },
     "disable_bot_defense": {},
     "api_definition": {
+      "tenant": "f5-sales-public-qdpwiibg",
       "namespace": "::namespace::",
       "name": "arcadia-api-definition",
       "kind": "api_definition"
