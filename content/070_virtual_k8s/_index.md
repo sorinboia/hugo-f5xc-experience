@@ -3,7 +3,7 @@ title = "Distributed Virtual Kubernetes"
 menuTitle = "Distributed Virtual Kubernetes"
 weight = 70
 chapter = true
-pre = "<b>6. </b>"
+pre = "<b>7. </b>"
 +++
 
 Distributed Virtual Kubernetes
