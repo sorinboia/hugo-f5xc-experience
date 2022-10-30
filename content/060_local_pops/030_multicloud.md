@@ -60,7 +60,7 @@ At the same time the **Login** and **User** services deal with sensetive data an
   },
   "spec": {
     "domains": [
-      "::acradiaCe::"
+      "::makeid::.sales-public.f5demos.com"
     ],
     "https_auto_cert": {
       "http_redirect": true,
