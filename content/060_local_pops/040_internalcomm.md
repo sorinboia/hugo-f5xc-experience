@@ -3,6 +3,9 @@ title = "Inter DC communication"
 weight = 40
 +++
 
+![](/images/diagrams/Slide6.PNG)
+
+
 1. Create the **internal Load Balancer** which will route the traffic from the AWS site **Stock transaction** service to the onprem **Users** service
 
 ![](/images/6/Slide4.PNG)

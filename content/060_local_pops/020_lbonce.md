@@ -3,6 +3,8 @@ title = "Load balancer onprem CE"
 weight = 20
 +++
 
+![](/images/diagrams/Slide4.PNG)
+
 1. Publish the LB directly on the on prem CE
 ![](/images/6/Slide4.PNG)
 

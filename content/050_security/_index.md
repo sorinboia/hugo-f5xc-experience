@@ -6,4 +6,6 @@ chapter = true
 pre = "<b>5. </b>"
 +++
 
+![](/images/diagrams/Slide2.PNG)
+
 Now that our application has been published we need to make sure that it is secured.

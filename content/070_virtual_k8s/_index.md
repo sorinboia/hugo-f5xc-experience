@@ -7,3 +7,5 @@ pre = "<b>7. </b>"
 +++
 
 Distributed Virtual Kubernetes
+
+![](/images/diagrams/Slide7.PNG)

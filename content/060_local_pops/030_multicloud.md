@@ -3,6 +3,8 @@ title = "Multicloud App"
 weight = 30
 +++
 
+![](/images/diagrams/Slide5.PNG)
+
 1. Create a new **Pool** for the part of the application that is deployed in AWS
 ![](/images/6/Slide2.PNG)
 
