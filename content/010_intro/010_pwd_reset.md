@@ -3,4 +3,7 @@ title = "Password Reset"
 weight = 10
 +++
 
-In order to access the F5XC platform you need to follow [this link](/needlink/).
+If you reached this step you should already have received an email from F5XC requesting you to **reset your password**.  
+Check you email inbox and follow the bellow steps.
+
+![](/images/1/Slide1.PNG)
