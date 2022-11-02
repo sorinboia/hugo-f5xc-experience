@@ -1,9 +1,9 @@
 +++
 title = "Publish the application"
 menuTitle = "Publish the application"
-weight = 40
+weight = 20
 chapter = true
-pre = "<b>4. </b>"
+pre = "<b>2. </b>"
 +++
 
 
