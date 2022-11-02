@@ -1,9 +1,9 @@
 +++
 title = "Secure the application"
 menuTitle = "Secure the application"
-weight = 50
+weight = 30
 chapter = true
-pre = "<b>5. </b>"
+pre = "<b>3. </b>"
 +++
 
 Now that our application has been published we need to make sure that it is secured.

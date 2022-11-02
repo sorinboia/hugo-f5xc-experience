@@ -1,9 +1,9 @@
 +++
 title = "Local Pops"
 menuTitle = "Local Pops"
-weight = 60
+weight = 40
 chapter = true
-pre = "<b>6. </b>"
+pre = "<b>4. </b>"
 +++
 
 F5XC can provide additional capabilities by expanding the F5XC directly into the customer datacenter.  

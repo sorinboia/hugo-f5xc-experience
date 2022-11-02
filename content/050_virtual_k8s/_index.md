@@ -1,9 +1,9 @@
 +++
 title = "Distributed Kubernetes"
 menuTitle = "Distributed Kubernetes"
-weight = 70
+weight = 50
 chapter = true
-pre = "<b>7. </b>"
+pre = "<b>5. </b>"
 +++
 
 F5 Distributed Cloud can provide a distributed Kubernetes environment where we can deploy our application containers in any of the F5XC Regional Edge or Customer Edge.  
