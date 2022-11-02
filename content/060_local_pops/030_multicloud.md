@@ -3,6 +3,11 @@ title = "Multicloud App"
 weight = 30
 +++
 
+Our onprem infrastracture is no longer able to handle the load of our application which boomed due to mass crypto currency addoption.  
+We need to quickly expand and this can be done with any of the cloud providers while keeping the same level of application security and workflows.  
+The management decided to go with AWS and move the **Stocks**, **Stocks Transaction** and **Frontend** services.  
+The **Users** and **Login** services will need to remain onprem since they deal with user sensetive data and the regulation and the security team are not allowing moving them.  
+
 ![](/images/diagrams/Slide5.PNG)
 
 1. Create a new **Pool** for the part of the application that is deployed in AWS

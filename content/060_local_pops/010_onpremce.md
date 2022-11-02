@@ -4,6 +4,9 @@ date = 2020-07-08T14:37:59+03:00
 weight = 10
 +++
 
+**F5XC** is capable of deploying and **Customer Edge ( CE )** in the onprem or cloud environments.  
+This allows us to send the traffic to the application through an IPSEC tunnel and also provide internal and external load balancing and security services.
+
 ![](/images/diagrams/Slide3.PNG)
 
 1. Create a HTTP health check object

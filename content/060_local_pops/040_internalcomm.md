@@ -3,6 +3,8 @@ title = "Inter DC communication"
 weight = 40
 +++
 
+After migrating parts of the application and specially the **Stocks Transaction** service it is required to provide connectivity from the cloud environment to the on prem remainging **Users** service.
+
 ![](/images/diagrams/Slide6.PNG)
 
 
