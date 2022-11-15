@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.0" />
+    <meta name="description" content="F5XC experience">
+<meta name="author" content="Sorin Boiangiu">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Load Balancer :: F5XC experience</title>
+
+    
+    <link href="../../css/nucleus.css?1668514473" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1668514473" rel="stylesheet">
+    <link href="../../css/hybrid.css?1668514473" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1668514473" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1668514473" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1668514473" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1668514473" rel="stylesheet">
+    <link href="../../css/theme.css?1668514473" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1668514473" rel="stylesheet">
+    
+    <link href="../../css/theme-blue.css?1668514473" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1668514473"></script>
+
+    <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+    </style>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177908951-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="" data-url="../../020_application/020_lb_1/">
+        <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="../../"><h4 style="color: white !important;">F5XC Experience</h4></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1668514473"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1668514473"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1668514473"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/010_intro/" title="Intro to the workshop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../010_intro/">
+          <b>1. </b>Intro to the workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/010_intro/010_pwd_reset/" title="Password Reset" class="dd-item ">
+        <a href="../../010_intro/010_pwd_reset/">
+        Password Reset
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/010_intro/020_first_login/" title="Login" class="dd-item ">
+        <a href="../../010_intro/020_first_login/">
+        Login
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/020_application/" title="Publish the application" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../../020_application/">
+          <b>2. </b>Publish the application
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/020_application/010_app_1/" title="The app" class="dd-item ">
+        <a href="../../020_application/010_app_1/">
+        The app
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/020_application/020_lb_1/" title="Load Balancer" class="dd-item active">
+        <a href="../../020_application/020_lb_1/">
+        Load Balancer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/020_application/030_visibility_1/" title="Visibility" class="dd-item ">
+        <a href="../../020_application/030_visibility_1/">
+        Visibility
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/030_security/" title="Secure the application" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../030_security/">
+          <b>3. </b>Secure the application
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/020_waf/" title="Web Application Firewall" class="dd-item ">
+        <a href="../../030_security/020_waf/">
+        Web Application Firewall
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/030_visibility/" title="Testing and Visibility" class="dd-item ">
+        <a href="../../030_security/030_visibility/">
+        Testing and Visibility
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/040_api/" title="API Security" class="dd-item ">
+        <a href="../../030_security/040_api/">
+        API Security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/050_testing_api/" title="Testing API Security" class="dd-item ">
+        <a href="../../030_security/050_testing_api/">
+        Testing API Security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/060_bot/" title="Bot protection" class="dd-item ">
+        <a href="../../030_security/060_bot/">
+        Bot protection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/040_local_pops/" title="Local Pops" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../040_local_pops/">
+          <b>4. </b>Local Pops
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/010_onpremce/" title="Directly inside" class="dd-item ">
+        <a href="../../040_local_pops/010_onpremce/">
+        Directly inside
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/020_lbonce/" title="Load balancer onprem CE" class="dd-item ">
+        <a href="../../040_local_pops/020_lbonce/">
+        Load balancer onprem CE
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/030_multicloud/" title="Multicloud App" class="dd-item ">
+        <a href="../../040_local_pops/030_multicloud/">
+        Multicloud App
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/040_internalcomm/" title="Inter DC communication" class="dd-item ">
+        <a href="../../040_local_pops/040_internalcomm/">
+        Inter DC communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/050_virtual_k8s/" title="Distributed Kubernetes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../050_virtual_k8s/">
+          <b>5. </b>Distributed Kubernetes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/050_virtual_k8s/010_vk8s/" title="Virual K8S" class="dd-item ">
+        <a href="../../050_virtual_k8s/010_vk8s/">
+        Virual K8S
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/050_virtual_k8s/020_lb_to_vk8s/" title="Load Balancer Routing" class="dd-item ">
+        <a href="../../050_virtual_k8s/020_lb_to_vk8s/">
+        Load Balancer Routing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/060_final_words/" title="Final Words" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../060_final_words/">
+          <b>6. </b>Final Words
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+    <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+    <div>
+    <div id="top-bar">
+        
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+        <i class="fas fa-bars"></i>
+        </a>
+        </span>
+    
+    <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+    
+    <span class="links">
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href='../../'>F5XC Experience</a> > <a href='../../020_application/'>Publish the application</a> > Load Balancer
+    
+    
+    
+    
+    
+    
+    
+    </span>
+    </div>
+    
+    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+    
+    </div>
+    </div>
+    
+    <div id="head-tags">
+        
+    </div>
+    
+    <div id="body-inner">
+        
+    <h1>
+    
+    Load Balancer
+    </h1>
+    
+
+    
+
+
+<p>Our first step will be to publish the on prem Arcadia applicaion through the F5XC.<br>
+This will first provide us with built in visibility for the application behaviour and the capability in the next steps to add security services.</p>
+<p><img src="../../images/diagrams/Slide1.PNG" alt=""></p>
+<ol>
+<li>
+<p>Create the <strong>pool</strong> that will represent our backend services
+<img src="../../images/4/Slide1.PNG" alt="">
+<script type="text/javascript">    
+        function toggle_visibility(el) {
+           const e = el.nextSibling.nextSibling.nextSibling.nextSibling;             
+           if(e.style.display == 'none') {
+              el.innerHTML = 'Hide';  
+              e.style.display = 'block';
+           }
+           else {
+              el.innerHTML = 'Show';  
+              e.style.display = 'none';
+           }              
+        }
+        function cp_to_clip(el) {
+            const e = el.nextSibling.nextSibling.children[0];
+            console.log(e.textContent);
+            navigator.clipboard.writeText(e.textContent);
+            
+
+
+        }
+</script>
+<div>    
+    <button onclick="toggle_visibility(this)" >
+        Show
+    </button>
+    <button onclick="cp_to_clip(this)">
+        Copy code
+    </button>          
+    <pre style="display:none">    
+    <code>                
+        
+{
+  &#34;metadata&#34;: {
+    &#34;name&#34;: &#34;arcadia-origin-pool&#34;    
+  },
+  &#34;spec&#34;: {
+    &#34;origin_servers&#34;: [
+      {
+        &#34;public_name&#34;: {
+          &#34;dns_name&#34;: &#34;::udfarcadia::&#34;
+        }
+      }
+    ],
+    &#34;use_tls&#34;: {
+      &#34;use_host_header_as_sni&#34;: {},
+      &#34;tls_config&#34;: {
+        &#34;default_security&#34;: {}
+      },
+      &#34;skip_server_verification&#34;: {},
+      &#34;no_mtls&#34;: {}
+    },
+    &#34;port&#34;: 443,
+    &#34;same_as_endpoint_port&#34;: {},
+    &#34;healthcheck&#34;: [
+      {  
+        &#34;name&#34;: &#34;tcp-monitor&#34;
+      }
+    ],
+    &#34;loadbalancer_algorithm&#34;: &#34;LB_OVERRIDE&#34;,
+    &#34;endpoint_selection&#34;: &#34;LOCAL_PREFERRED&#34;,
+    &#34;advanced_options&#34;: {
+      &#34;connection_timeout&#34;: 2000,
+      &#34;http_idle_timeout&#34;: 300000,
+      &#34;disable_circuit_breaker&#34;: {},
+      &#34;disable_outlier_detection&#34;: {},
+      &#34;no_panic_threshold&#34;: {},
+      &#34;disable_subsets&#34;: {},
+      &#34;http2_options&#34;: null
+    }
+  }  
+}
+
+    </code>
+</pre>
+</div></p>
+</li>
+<li>
+<p>Create the <strong>load balancer</strong>
+<img src="../../images/4/Slide2.PNG" alt="">
+<script type="text/javascript">    
+        function toggle_visibility(el) {
+           const e = el.nextSibling.nextSibling.nextSibling.nextSibling;             
+           if(e.style.display == 'none') {
+              el.innerHTML = 'Hide';  
+              e.style.display = 'block';
+           }
+           else {
+              el.innerHTML = 'Show';  
+              e.style.display = 'none';
+           }              
+        }
+        function cp_to_clip(el) {
+            const e = el.nextSibling.nextSibling.children[0];
+            console.log(e.textContent);
+            navigator.clipboard.writeText(e.textContent);
+            
+
+
+        }
+</script>
+<div>    
+    <button onclick="toggle_visibility(this)" >
+        Show
+    </button>
+    <button onclick="cp_to_clip(this)">
+        Copy code
+    </button>          
+    <pre style="display:none">    
+    <code>                
+        
+{
+  &#34;metadata&#34;: {
+    &#34;name&#34;: &#34;arcadia&#34;,    
+    &#34;labels&#34;: {},
+    &#34;annotations&#34;: {}
+  },
+  &#34;spec&#34;: {
+    &#34;domains&#34;: [
+      &#34;::makeid::.sales-public.f5demos.com&#34;
+    ],
+    &#34;https_auto_cert&#34;: {
+      &#34;http_redirect&#34;: true,
+      &#34;port&#34;: 443,
+      &#34;tls_config&#34;: {
+        &#34;default_security&#34;: {}
+      },
+      &#34;no_mtls&#34;: {},
+      &#34;default_header&#34;: {},
+      &#34;enable_path_normalize&#34;: {}
+    },
+    &#34;downstream_tls_certificate_expiration_timestamps&#34;: [
+      {}
+    ],
+    &#34;advertise_on_public_default_vip&#34;: {},
+    &#34;default_route_pools&#34;: [
+      {
+        &#34;pool&#34;: {
+          &#34;name&#34;: &#34;arcadia-origin-pool&#34;
+        },
+        &#34;weight&#34;: 1,
+        &#34;priority&#34;: 1,
+        &#34;endpoint_subsets&#34;: {}
+      }
+    ],
+    &#34;single_lb_app&#34;: {
+      &#34;enable_discovery&#34;: {
+        &#34;disable_learn_from_redirect_traffic&#34;: {}
+      },
+      &#34;enable_ddos_detection&#34;: {},
+      &#34;enable_malicious_user_detection&#34;: {}
+    }
+  }
+}
+
+    </code>
+</pre>
+</div></p>
+</li>
+<li>
+<p>Now that we have finished the configuration, F5XC will provision our services including generating certificates.<br>
+In order to browse to the site you need to go to: <code>https://::makeid::.sales-public.f5demos.com/</code>
+
+<div class="notices " ><p>Username: <a href="mailto:satoshi@bitcoin.com">satoshi@bitcoin.com</a><br>
+Password: bitcoin</p>
+</div>
+</p>
+</li>
+</ol>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../020_application/010_app_1/" title="The app"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+      
+        <a class="nav nav-next" href="../../020_application/030_visibility_1/" title="Visibility" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+      
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1668514473"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1668514473"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1668514473"></script>
+    <script src="../../js/jquery.sticky.js?1668514473"></script>
+    <script src="../../js/featherlight.min.js?1668514473"></script>
+    <script src="../../js/highlight.pack.js?1668514473"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1668514473"></script>
+    <script src="../../js/learn.js?1668514473"></script>
+    <script src="../../js/hugo-learn.js?1668514473"></script>
+
+    <link href="../../mermaid/mermaid.css?1668514473" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1668514473"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

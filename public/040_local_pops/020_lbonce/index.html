@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.0" />
+    <meta name="description" content="F5XC experience">
+<meta name="author" content="Sorin Boiangiu">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Load balancer onprem CE :: F5XC experience</title>
+
+    
+    <link href="../../css/nucleus.css?1668514473" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1668514473" rel="stylesheet">
+    <link href="../../css/hybrid.css?1668514473" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1668514473" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1668514473" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1668514473" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1668514473" rel="stylesheet">
+    <link href="../../css/theme.css?1668514473" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1668514473" rel="stylesheet">
+    
+    <link href="../../css/theme-blue.css?1668514473" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1668514473"></script>
+
+    <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+    </style>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-177908951-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="" data-url="../../040_local_pops/020_lbonce/">
+        <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="../../"><h4 style="color: white !important;">F5XC Experience</h4></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1668514473"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1668514473"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1668514473"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/010_intro/" title="Intro to the workshop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../010_intro/">
+          <b>1. </b>Intro to the workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/010_intro/010_pwd_reset/" title="Password Reset" class="dd-item ">
+        <a href="../../010_intro/010_pwd_reset/">
+        Password Reset
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/010_intro/020_first_login/" title="Login" class="dd-item ">
+        <a href="../../010_intro/020_first_login/">
+        Login
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/020_application/" title="Publish the application" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../020_application/">
+          <b>2. </b>Publish the application
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/020_application/010_app_1/" title="The app" class="dd-item ">
+        <a href="../../020_application/010_app_1/">
+        The app
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/020_application/020_lb_1/" title="Load Balancer" class="dd-item ">
+        <a href="../../020_application/020_lb_1/">
+        Load Balancer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/020_application/030_visibility_1/" title="Visibility" class="dd-item ">
+        <a href="../../020_application/030_visibility_1/">
+        Visibility
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/030_security/" title="Secure the application" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../030_security/">
+          <b>3. </b>Secure the application
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/020_waf/" title="Web Application Firewall" class="dd-item ">
+        <a href="../../030_security/020_waf/">
+        Web Application Firewall
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/030_visibility/" title="Testing and Visibility" class="dd-item ">
+        <a href="../../030_security/030_visibility/">
+        Testing and Visibility
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/040_api/" title="API Security" class="dd-item ">
+        <a href="../../030_security/040_api/">
+        API Security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/050_testing_api/" title="Testing API Security" class="dd-item ">
+        <a href="../../030_security/050_testing_api/">
+        Testing API Security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/030_security/060_bot/" title="Bot protection" class="dd-item ">
+        <a href="../../030_security/060_bot/">
+        Bot protection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/040_local_pops/" title="Local Pops" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../../040_local_pops/">
+          <b>4. </b>Local Pops
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/010_onpremce/" title="Directly inside" class="dd-item ">
+        <a href="../../040_local_pops/010_onpremce/">
+        Directly inside
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/020_lbonce/" title="Load balancer onprem CE" class="dd-item active">
+        <a href="../../040_local_pops/020_lbonce/">
+        Load balancer onprem CE
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/030_multicloud/" title="Multicloud App" class="dd-item ">
+        <a href="../../040_local_pops/030_multicloud/">
+        Multicloud App
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/040_local_pops/040_internalcomm/" title="Inter DC communication" class="dd-item ">
+        <a href="../../040_local_pops/040_internalcomm/">
+        Inter DC communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/050_virtual_k8s/" title="Distributed Kubernetes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../050_virtual_k8s/">
+          <b>5. </b>Distributed Kubernetes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/050_virtual_k8s/010_vk8s/" title="Virual K8S" class="dd-item ">
+        <a href="../../050_virtual_k8s/010_vk8s/">
+        Virual K8S
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/050_virtual_k8s/020_lb_to_vk8s/" title="Load Balancer Routing" class="dd-item ">
+        <a href="../../050_virtual_k8s/020_lb_to_vk8s/">
+        Load Balancer Routing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/060_final_words/" title="Final Words" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../060_final_words/">
+          <b>6. </b>Final Words
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+    <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+    <div>
+    <div id="top-bar">
+        
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+        <i class="fas fa-bars"></i>
+        </a>
+        </span>
+    
+    <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+    
+    <span class="links">
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href='../../'>F5XC Experience</a> > <a href='../../040_local_pops/'>Local Pops</a> > Load balancer onprem CE
+    
+    
+    
+    
+    
+    
+    
+    </span>
+    </div>
+    
+    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+    
+    </div>
+    </div>
+    
+    <div id="head-tags">
+        
+    </div>
+    
+    <div id="body-inner">
+        
+    <h1>
+    
+    Load balancer onprem CE
+    </h1>
+    
+
+    
+
+
+<p>In cases where going through the F5XC global network is not possible due to very low latency or regulations requirnments we can configure the F5XC CE with the same configuration and capabilities that were used when publishing and protecting the app through the F5 global network.</p>
+<p><img src="../../images/diagrams/Slide4.PNG" alt=""></p>
+<ol>
+<li>Publish the LB directly on the on prem CE
+<img src="../../images/6/Slide4.PNG" alt=""></li>
+</ol>
+<script type="text/javascript">    
+        function toggle_visibility(el) {
+           const e = el.nextSibling.nextSibling.nextSibling.nextSibling;             
+           if(e.style.display == 'none') {
+              el.innerHTML = 'Hide';  
+              e.style.display = 'block';
+           }
+           else {
+              el.innerHTML = 'Show';  
+              e.style.display = 'none';
+           }              
+        }
+        function cp_to_clip(el) {
+            const e = el.nextSibling.nextSibling.children[0];
+            console.log(e.textContent);
+            navigator.clipboard.writeText(e.textContent);
+            
+
+
+        }
+</script>
+<div>    
+    <button onclick="toggle_visibility(this)" >
+        Show
+    </button>
+    <button onclick="cp_to_clip(this)">
+        Copy code
+    </button>          
+    <pre style="display:none">    
+    <code>                
+        
+{
+  &#34;metadata&#34;: {
+    &#34;name&#34;: &#34;arcadia-ce-onprem&#34;,    
+    &#34;annotations&#34;: {},
+    &#34;disable&#34;: false
+  },
+  &#34;spec&#34;: {
+    &#34;domains&#34;: [
+      &#34;::acradiaCe::&#34;
+    ],
+    &#34;https&#34;: {
+      &#34;http_redirect&#34;: false,
+      &#34;add_hsts&#34;: false,
+      &#34;port&#34;: 443,
+      &#34;tls_parameters&#34;: {
+        &#34;tls_config&#34;: {
+          &#34;default_security&#34;: {}
+        },
+        &#34;tls_certificates&#34;: [
+          {
+            &#34;certificate_url&#34;: &#34;string:///LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURwekNDQW8rZ0F3SUJBZ0lVUC91T1ZITmladElUaFdNN0lSRDVMMFo2cXpBd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1l6RUxNQWtHQTFVRUJoTUNTVXd4RXpBUkJnTlZCQWdNQ2xOdmJXVXRVM1JoZEdVeElUQWZCZ05WQkFvTQpHRWx1ZEdWeWJtVjBJRmRwWkdkcGRITWdVSFI1SUV4MFpERWNNQm9HQTFVRUF3d1RLaTVoWTJObGMzTXVkV1JtCkxtWTFMbU52YlRBZUZ3MHlNakV3TWpReE5URTNOVE5hRncweU16RXdNalF4TlRFM05UTmFNR014Q3pBSkJnTlYKQkFZVEFrbE1NUk13RVFZRFZRUUlEQXBUYjIxbExWTjBZWFJsTVNFd0h3WURWUVFLREJoSmJuUmxjbTVsZENCWAphV1JuYVhSeklGQjBlU0JNZEdReEhEQWFCZ05WQkFNTUV5b3VZV05qWlhOekxuVmtaaTVtTlM1amIyMHdnZ0VpCk1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRREhhRGZyNktFMlRXK0dLUEdDSVlOdVNrTHEKdW5zaWRxTzJBazFBMFI1eGZPN042bm02WXBNRVN4T0tvYldQNCtCbXNNek0zOExPS05ERm9reklNRUs3ZFdBZwpYa0FTZTVzNkpkTEFRSXFmOThPbWVFbWZUcW02OGFPMWlGWXphYTdMSEM4cjZPMlhyb2VUWnZJUXhNTVVvMlNwCld2Si91cUFJalcwRnNjSU1seVJhTzVlNWZNNUNWczRFV1ZCbHFQWkRTeWRrYjRLZFZydWtJNmR2MDRUSUwzWlAKbGJldnE5TjAzMzdnbnoxN2VERCtmemJwa2Z5c0Q3aEFSVytmQVQ5NzZPbDAwdkhDOENGaWdJMzhJdm5TSjE0Zgp5eE1EL0Z5Njd4WjdxRWliakN5MzdETlFTZzlpdmxjYUR1NkpBT21YZ09wakFMc3dXZUN1bE1ZQlNtWk5BZ01CCkFBR2pVekJSTUIwR0ExVWREZ1FXQkJRTTRjbElMeVNaTnFuSlNVaVNFZ2RYWWc1TGJ6QWZCZ05WSFNNRUdEQVcKZ0JRTTRjbElMeVNaTnFuSlNVaVNFZ2RYWWc1TGJ6QVBCZ05WSFJNQkFmOEVCVEFEQVFIL01BMEdDU3FHU0liMwpEUUVCQ3dVQUE0SUJBUUN4bVhTVEJVaDJHVFFnYys1TDdZSEdFY3ExeWZhRmNDWHEzdnhVeFk3d2txZURKZTdyCjJlK0xwODZ2ZitzQkxwOHV6MktXb2Q3YmxiaUVpeGdveHRZSm9qVlNYeDgrdk1Zc2JiZXlHSmVTZXR6SWhkZkgKSUlpZXNrM3ZMT3BpWDFLRm4yWE9jaFRFWE5SK3NFR2RaZy9sZ1U3MDVrWllZbndIZFppaUF6UjI1YXJUbWEwNgpTekdWZDR0cnJsdVVKR1BBcGZUMHhRL0tMMUpDTnEwR3ZtbzVmc3QrWlJWdHBOSVhPSitHVWlQMDlZZzNseitYCnBWTEhrV3kxcWFiejhaNWp3aTVxaXBwWjVBQVdFTS9qUXhGMWRCYWFNL2ZSWXVLdmFtM1ZsQStIU0FtZUk1K3kKVWN6YVF4d21VNEJ3YWFlbGQ5WXh0VnArUlk5RXBIWXlTWGJSCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=&#34;,
+            &#34;private_key&#34;: {
+              &#34;clear_secret_info&#34;: {
+                &#34;url&#34;: &#34;string:///LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2QUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktZd2dnU2lBZ0VBQW9JQkFRREhhRGZyNktFMlRXK0cKS1BHQ0lZTnVTa0xxdW5zaWRxTzJBazFBMFI1eGZPN042bm02WXBNRVN4T0tvYldQNCtCbXNNek0zOExPS05ERgpva3pJTUVLN2RXQWdYa0FTZTVzNkpkTEFRSXFmOThPbWVFbWZUcW02OGFPMWlGWXphYTdMSEM4cjZPMlhyb2VUClp2SVF4TU1VbzJTcFd2Si91cUFJalcwRnNjSU1seVJhTzVlNWZNNUNWczRFV1ZCbHFQWkRTeWRrYjRLZFZydWsKSTZkdjA0VElMM1pQbGJldnE5TjAzMzdnbnoxN2VERCtmemJwa2Z5c0Q3aEFSVytmQVQ5NzZPbDAwdkhDOENGaQpnSTM4SXZuU0oxNGZ5eE1EL0Z5Njd4WjdxRWliakN5MzdETlFTZzlpdmxjYUR1NkpBT21YZ09wakFMc3dXZUN1CmxNWUJTbVpOQWdNQkFBRUNnZ0VBYmp4WkhkdCtzOHhmS09XZGpYa0ZkWVVzTlNOZVN4RVhNOWxWNTgwemJUM0oKcnFBL0p5Q3pjWjRuY1c0d054bWN4bWhhNzYrTHUvaW9ZWGwxeFAyWkJwUyt6V1lOT2FxSGg3KzlJSGNOcTUyRwoxWktOOExuRjd3a0NuYXAvTFBEeHBtc3dVSy8yR1BKdEZMbkdmQ3FxUmRDR0ozR1Z1YkxzSVk0OWhQWmQ5aUxsCjUvMVdWWnN1NDk5NW41TThHY3JNbkprVWdwYXdsUkY0TUNmbVpmQ2hSVkprcWQrc0RKRDRKR3RzS1p1OHViSkUKRFQ0ekw4YWprNUdGRnh2N292M0d0czVMUUhNTDBXSVh6SSs4bW53VzZBZkhjNlg1VDg3Q1FqakV4UGpjd0JRZwpHbm11YnBwQmdFbEtmckNPZGlGMkR3SG05di9WOU4yYTdFZk5BSk51cVFLQmdRRHM5Nm0rNEJkdjBQNmlDbDVtCjVUNHN2cDhJOGM5UldNTDNWMlIvQXBzNXFETHNPZ2FIRmVreG8wTG1iYmFEWEluLzZLbkV2Vi83SEYrRGhRM1gKaDlvNW5KV1h2TGxLUURxc2pUN0NhME1LRGNxWVI3VkN5alZWcDV2LzhySEJsZHVvcER0V2hZNjgrYUZzSUJxego2bGY5aWxVTzg1c1JwbVpVRlFiSGdvVHZId0tCZ1FEWGJFVUNheTgyT3R6OHZYbXA2akExRytMZlVwOWc3OFZuClJad0Zvb3ZxN2VDRUQrZDQrNU1IM3F3MUNaemRUSmtNY2RTMVJXK3JGaVZhNWJDdmRUREREVzVMOHJRSG1zM3MKcm16OC8zUEdhb2p6OGszVFdiTjBWakNLNWpHb1M5a3Z0SHhNcE9qcEtvODJJVkZ6QUZjZ0JvQldpOU10a1k2MAppWmczY2JsNUV3S0JnQmlpWW40YVU3Vm5GNkdHekd1TDkxdTFjVmovc2xxMWpJY2tDYWwrZnQ2T2tzU2wvNW01CmVHV1ZvRlhPSUFRbDhaNnQ5RUFrbzc2NkkxL0x6RFdVeE9YcVZrN1E2cjVDVVJjeEU4NG9VbTdRSWppVWM4NSsKc082M251c0xzdGo2R0R5KzNnQlBvQmdiSjJIVE1KTjFrREltV0ZOV2xjOU82aUpoa1RQYWFMRm5Bb0dBZlZKaApPeXo3eEVLdU9PSkptdzNBaWNUMVVSSVI0aVRhNUY5Y2l2S3JEenJmdURSQVp1T0QvN29NMkxZRTZjRWI4Rjl3CmJSdytBSHZiczJ1WVJCcWJDWDRRd21JcFZaczdYUXVFSUJMRVdaTzBwS1k3bkU2ODFWc20xa2RnY0JYZi9aNjAKQ1NxT3pNYVRsZHdBTkRUb2Vwc05va3VweVFLNjBGQ1RtdjJ2OXIwQ2dZQjA2VndOazQwRERGbXBJenhDalZoSApFWWwrUWhOdmJ5TGxKaFVBczZaeGhUYUZrb2tkVVRiOTRjcHNWeHZKenVoZ3VJblJiYWtlL1FWTnl6ZG9uWlNmCkJYWTZ2bktnY292QTNwOEpOeFNNcUh4eVE0WmVJQnZYRFBFYXhYR0Qzcmo0eURVZFZJY1p4Szgwb0NFWWNOcWkKM2VTUHU3cGRLWlNxYWF0NFltdEpxUT09Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0=&#34;
+              },
+              &#34;secret_encoding_type&#34;: &#34;EncodingNone&#34;
+            },
+            &#34;disable_ocsp_stapling&#34;: {}
+          }
+        ],
+        &#34;no_mtls&#34;: {}
+      },
+      &#34;default_header&#34;: {},
+      &#34;enable_path_normalize&#34;: {},
+      &#34;non_default_loadbalancer&#34;: {}
+    },
+    &#34;downstream_tls_certificate_expiration_timestamps&#34;: [
+      {}
+    ],
+    &#34;advertise_custom&#34;: {
+      &#34;advertise_where&#34;: [
+        {
+          &#34;site&#34;: {
+            &#34;network&#34;: &#34;SITE_NETWORK_INSIDE_AND_OUTSIDE&#34;,
+            &#34;site&#34;: {
+              &#34;tenant&#34;: &#34;f5-sales-public-qdpwiibg&#34;,
+              &#34;namespace&#34;: &#34;system&#34;,
+              &#34;name&#34;: &#34;::ceOnPrem::&#34;,
+              &#34;kind&#34;: &#34;site&#34;
+            }
+          },
+          &#34;use_default_port&#34;: {}
+        }
+      ]
+    },
+    &#34;default_route_pools&#34;: [
+      {
+        &#34;pool&#34;: {
+          &#34;tenant&#34;: &#34;f5-sales-public-qdpwiibg&#34;,
+          &#34;namespace&#34;: &#34;::namespace::&#34;,
+          &#34;name&#34;: &#34;arcadia-onprem-origin-pool&#34;,
+          &#34;kind&#34;: &#34;origin_pool&#34;
+        },
+        &#34;weight&#34;: 1,
+        &#34;priority&#34;: 1,
+        &#34;endpoint_subsets&#34;: {}
+      }
+    ],
+    &#34;routes&#34;: [],
+    &#34;app_firewall&#34;: {
+      &#34;tenant&#34;: &#34;f5-sales-public-qdpwiibg&#34;,
+      &#34;namespace&#34;: &#34;::namespace::&#34;,
+      &#34;name&#34;: &#34;arcadia-waf&#34;,
+      &#34;kind&#34;: &#34;app_firewall&#34;
+    },
+    &#34;add_location&#34;: true,
+    &#34;no_challenge&#34;: {},
+    &#34;user_id_client_ip&#34;: {},
+    &#34;disable_rate_limit&#34;: {},
+    &#34;waf_exclusion_rules&#34;: [],
+    &#34;data_guard_rules&#34;: [],
+    &#34;blocked_clients&#34;: [],
+    &#34;trusted_clients&#34;: [],
+    &#34;ddos_mitigation_rules&#34;: [],
+    &#34;active_service_policies&#34;: {
+      &#34;policies&#34;: [
+        {
+          &#34;tenant&#34;: &#34;f5-sales-public-qdpwiibg&#34;,
+          &#34;namespace&#34;: &#34;::namespace::&#34;,
+          &#34;name&#34;: &#34;arcadia-api-enforcer&#34;,
+          &#34;kind&#34;: &#34;service_policy&#34;
+        }
+      ]
+    },
+    &#34;round_robin&#34;: {},
+    &#34;enable_trust_client_ip_headers&#34;: {
+      &#34;client_ip_headers&#34;: [
+        &#34;x-forwarded-for&#34;
+      ]
+    },
+    &#34;disable_ddos_detection&#34;: {},
+    &#34;disable_malicious_user_detection&#34;: {},
+    &#34;enable_api_discovery&#34;: {
+      &#34;disable_learn_from_redirect_traffic&#34;: {}
+    },
+    &#34;disable_bot_defense&#34;: {},
+    &#34;api_definition&#34;: {
+      &#34;tenant&#34;: &#34;f5-sales-public-qdpwiibg&#34;,
+      &#34;namespace&#34;: &#34;::namespace::&#34;,
+      &#34;name&#34;: &#34;arcadia-api-definition&#34;,
+      &#34;kind&#34;: &#34;api_definition&#34;
+    },
+    &#34;disable_ip_reputation&#34;: {},
+    &#34;disable_client_side_defense&#34;: {},
+    &#34;dns_info&#34;: [],
+    &#34;state&#34;: &#34;VIRTUAL_HOST_READY&#34;,
+    &#34;auto_cert_info&#34;: {
+      &#34;auto_cert_state&#34;: &#34;AutoCertDisabled&#34;,
+      &#34;dns_records&#34;: []
+    }
+  }
+}
+
+    </code>
+</pre>
+</div>
+<ol start="2">
+<li>
+<p>Browse to <code>https://::acradiaCe::</code> . This is the domain name that points directly to the on prem CE.</p>
+</li>
+<li>
+<p>Now you can rerun the securty tests and observe that the same level of protection is enabled even when we publish the Load Balancer on the on prem CE
+WAF - <code>https://::acradiaCe::/?a=%3Cscript%3Ealert(%27xss%27)</code><br>
+API Protection - <code>https://::acradiaCe::/v1/notanactualapi</code></p>
+</li>
+</ol>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../040_local_pops/010_onpremce/" title="Directly inside"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+      
+        <a class="nav nav-next" href="../../040_local_pops/030_multicloud/" title="Multicloud App" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+      
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1668514473"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1668514473"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1668514473"></script>
+    <script src="../../js/jquery.sticky.js?1668514473"></script>
+    <script src="../../js/featherlight.min.js?1668514473"></script>
+    <script src="../../js/highlight.pack.js?1668514473"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1668514473"></script>
+    <script src="../../js/learn.js?1668514473"></script>
+    <script src="../../js/hugo-learn.js?1668514473"></script>
+
+    <link href="../../mermaid/mermaid.css?1668514473" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1668514473"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

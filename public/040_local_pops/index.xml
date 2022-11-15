@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Local Pops on F5XC experience</title>
+    <link>/040_local_pops/</link>
+    <description>Recent content in Local Pops on F5XC experience</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2020 14:37:59 +0300</lastBuildDate><atom:link href="/040_local_pops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Directly inside</title>
+      <link>/040_local_pops/010_onpremce/</link>
+      <pubDate>Wed, 08 Jul 2020 14:37:59 +0300</pubDate>
+      
+      <guid>/040_local_pops/010_onpremce/</guid>
+      <description>F5XC is capable of deploying and Customer Edge ( CE ) in the onprem or cloud environments.
+This allows us to send the traffic to the application through an IPSEC tunnel and also provide internal and external load balancing and security services.
+ Create a HTTP health check object   function toggle_visibility(el) {const e = el.nextSibling.nextSibling.nextSibling.nextSibling; if(e.style.display == &#39;none&#39;) {el.innerHTML = &#39;Hide&#39;; e.style.display = &#39;block&#39;;}else {el.</description>
+    </item>
+    
+    <item>
+      <title>Load balancer onprem CE</title>
+      <link>/040_local_pops/020_lbonce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/040_local_pops/020_lbonce/</guid>
+      <description>In cases where going through the F5XC global network is not possible due to very low latency or regulations requirnments we can configure the F5XC CE with the same configuration and capabilities that were used when publishing and protecting the app through the F5 global network.
+ Publish the LB directly on the on prem CE   function toggle_visibility(el) {const e = el.nextSibling.nextSibling.nextSibling.nextSibling; if(e.style.display == &#39;none&#39;) {el.innerHTML = &#39;Hide&#39;; e.</description>
+    </item>
+    
+    <item>
+      <title>Multicloud App</title>
+      <link>/040_local_pops/030_multicloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/040_local_pops/030_multicloud/</guid>
+      <description>Our onprem infrastracture is no longer able to handle the load of our application which boomed due to mass crypto currency addoption.
+We need to quickly expand and this can be done with any of the cloud providers while keeping the same level of application security and workflows.
+The management decided to go with AWS and move the Stocks, Stocks Transaction and Frontend services.
+The Users and Login services will need to remain onprem since they deal with user sensetive data and the regulation and the security team are not allowing moving them.</description>
+    </item>
+    
+    <item>
+      <title>Inter DC communication</title>
+      <link>/040_local_pops/040_internalcomm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/040_local_pops/040_internalcomm/</guid>
+      <description>After migrating parts of the application and specially the Stocks Transaction service it is required to provide connectivity from the cloud environment to the on prem remainging Users service.
+ Create the internal Load Balancer which will route the traffic from the AWS site Stock transaction service to the onprem Users service  function toggle_visibility(el) {const e = el.nextSibling.nextSibling.nextSibling.nextSibling; if(e.style.display == &#39;none&#39;) {el.innerHTML = &#39;Hide&#39;; e.style.display = &#39;block&#39;;}else {el.</description>
+    </item>
+    
+  </channel>
+</rss>

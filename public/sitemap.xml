@@ -5,101 +5,58 @@
     <loc>/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/070_controller/010_accessing_controller/</loc>
+    <loc>/040_local_pops/010_onpremce/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/030_application/010_app_deployment_1/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/060_security/010_elk_deployment/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/040_ingress/010_ingress_install_1/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/080_cleanup/010_cleanup/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/020_terraform/010_terraform_apply_1/</loc>
+    <loc>/020_application/010_app_1/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
     <loc>/010_intro/</loc>
     <lastmod>2020-07-08T14:11:17+03:00</lastmod>
   </url><url>
-    <loc>/020_terraform/020_eks_1/</loc>
+    <loc>/010_intro/010_pwd_reset/</loc>
+  </url><url>
+    <loc>/050_virtual_k8s/010_vk8s/</loc>
+  </url><url>
+    <loc>/020_application/020_lb_1/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/020_terraform/</loc>
+    <loc>/010_intro/020_first_login/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/070_controller/020_microgateway/</loc>
+    <loc>/020_application/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/060_security/020_nap_deployment/</loc>
+    <loc>/030_security/020_waf/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/050_service_mesh/020_nsm_deploy/</loc>
+    <loc>/040_local_pops/020_lbonce/</loc>
+  </url><url>
+    <loc>/050_virtual_k8s/020_lb_to_vk8s/</loc>
+  </url><url>
+    <loc>/030_security/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/040_ingress/020_ingress_01/</loc>
+    <loc>/040_local_pops/030_multicloud/</loc>
+  </url><url>
+    <loc>/030_security/030_visibility/</loc>
+  </url><url>
+    <loc>/020_application/030_visibility_1/</loc>
+  </url><url>
+    <loc>/040_local_pops/</loc>
     <lastmod>2020-07-08T14:37:59+03:00</lastmod>
   </url><url>
-    <loc>/070_controller/030_configuration/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
+    <loc>/030_security/040_api/</loc>
   </url><url>
-    <loc>/030_application/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
+    <loc>/040_local_pops/040_internalcomm/</loc>
   </url><url>
-    <loc>/020_terraform/030_eks_verification_1/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
+    <loc>/050_virtual_k8s/</loc>
   </url><url>
-    <loc>/040_ingress/030_health_https_1/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
+    <loc>/030_security/050_testing_api/</loc>
   </url><url>
-    <loc>/060_security/030_nap_test/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
+    <loc>/030_security/060_bot/</loc>
   </url><url>
-    <loc>/050_service_mesh/030_side_car_injection/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/040_ingress/040_oidc_1/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/060_security/040_bot_protection/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/070_controller/040_apis/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/040_ingress/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/050_service_mesh/040_opentracing/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/070_controller/050_explore/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/050_service_mesh/050_mesh_acl/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/040_ingress/060_mtls_1/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/050_service_mesh/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/060_security/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/070_controller/060_test/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/070_controller/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
-  </url><url>
-    <loc>/080_cleanup/</loc>
-    <lastmod>2020-07-08T14:37:59+03:00</lastmod>
+    <loc>/060_final_words/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>

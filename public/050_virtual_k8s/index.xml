@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distributed Kubernetes on F5XC experience</title>
+    <link>/050_virtual_k8s/</link>
+    <description>Recent content in Distributed Kubernetes on F5XC experience</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/050_virtual_k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virual K8S</title>
+      <link>/050_virtual_k8s/010_vk8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/050_virtual_k8s/010_vk8s/</guid>
+      <description>Deploy the app in the F5XC Distributed Virtual Kubernetes   function toggle_visibility(el) {const e = el.nextSibling.nextSibling.nextSibling.nextSibling; if(e.style.display == &#39;none&#39;) {el.innerHTML = &#39;Hide&#39;; e.style.display = &#39;block&#39;;}else {el.innerHTML = &#39;Show&#39;; e.style.display = &#39;none&#39;;} }function cp_to_clip(el) {const e = el.nextSibling.nextSibling.children[0];console.log(e.textContent);navigator.clipboard.writeText(e.textContent);} ShowCopy code  {&amp;#34;metadata&amp;#34;: {&amp;#34;name&amp;#34;: &amp;#34;arcadia-stocks&amp;#34;,&amp;#34;labels&amp;#34;: {},&amp;#34;annotations&amp;#34;: {},&amp;#34;disable&amp;#34;: false},&amp;#34;spec&amp;#34;: {&amp;#34;service&amp;#34;: {&amp;#34;num_replicas&amp;#34;: 1,&amp;#34;containers&amp;#34;: [{&amp;#34;name&amp;#34;: &amp;#34;stocks&amp;#34;,&amp;#34;image&amp;#34;: {&amp;#34;name&amp;#34;: &amp;#34;registry.</description>
+    </item>
+    
+    <item>
+      <title>Load Balancer Routing</title>
+      <link>/050_virtual_k8s/020_lb_to_vk8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/050_virtual_k8s/020_lb_to_vk8s/</guid>
+      <description>The last step will be to instruct the Load Balancer to send the relevant traffic to the service hosted in the Virtual Kubernetes environment.
+ Create a pool that represent the vK8s deployment.  function toggle_visibility(el) {const e = el.nextSibling.nextSibling.nextSibling.nextSibling; if(e.style.display == &#39;none&#39;) {el.innerHTML = &#39;Hide&#39;; e.style.display = &#39;block&#39;;}else {el.innerHTML = &#39;Show&#39;; e.style.display = &#39;none&#39;;} }function cp_to_clip(el) {const e = el.nextSibling.nextSibling.children[0];console.log(e.textContent);navigator.</description>
+    </item>
+    
+  </channel>
+</rss>

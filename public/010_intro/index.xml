@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Intro to the workshop on Nginx Experience</title>
+    <title>Intro to the workshop on F5XC experience</title>
     <link>/010_intro/</link>
-    <description>Recent content in Intro to the workshop on Nginx Experience</description>
+    <description>Recent content in Intro to the workshop on F5XC experience</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Jul 2020 14:11:17 +0300</lastBuildDate><atom:link href="/010_intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Password Reset</title>
+      <link>/010_intro/010_pwd_reset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/010_intro/010_pwd_reset/</guid>
+      <description>If you reached this step you should already have received an email from F5XC requesting you to reset your password.
+Check you email inbox and follow the bellow steps.</description>
+    </item>
+    
+    <item>
+      <title>Login</title>
+      <link>/010_intro/020_first_login/</link>
+      <pubDate>Wed, 08 Jul 2020 14:37:59 +0300</pubDate>
+      
+      <guid>/010_intro/020_first_login/</guid>
+      <description>In order to access the F5XC platform you need to follow this link.
+Enter your email and new password.
+Some additional initial setup steps are required, follow the described bellow.</description>
+    </item>
+    
   </channel>
 </rss>

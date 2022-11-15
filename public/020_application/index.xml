@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publish the application on F5XC experience</title>
+    <link>/020_application/</link>
+    <description>Recent content in Publish the application on F5XC experience</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2020 14:37:59 +0300</lastBuildDate><atom:link href="/020_application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The app</title>
+      <link>/020_application/010_app_1/</link>
+      <pubDate>Wed, 08 Jul 2020 14:37:59 +0300</pubDate>
+      
+      <guid>/020_application/010_app_1/</guid>
+      <description>The application is a crypto traiding platform with the following components:
+ Frontend - serves the non dynamic content for like html, js, css and images Login - in in charge of dealing with anything related to the login user functionality Users - all user data interaction is done through this microservice only Stocks - connects to external resources to get the latest crypto data and serves it to the application clients Stocks Transaction - Deal with all related to buying or selling crypto currencies.</description>
+    </item>
+    
+    <item>
+      <title>Load Balancer</title>
+      <link>/020_application/020_lb_1/</link>
+      <pubDate>Wed, 08 Jul 2020 14:37:59 +0300</pubDate>
+      
+      <guid>/020_application/020_lb_1/</guid>
+      <description>Our first step will be to publish the on prem Arcadia applicaion through the F5XC.
+This will first provide us with built in visibility for the application behaviour and the capability in the next steps to add security services.
+  Create the pool that will represent our backend services function toggle_visibility(el) {const e = el.nextSibling.nextSibling.nextSibling.nextSibling; if(e.style.display == &#39;none&#39;) {el.innerHTML = &#39;Hide&#39;; e.style.display = &#39;block&#39;;}else {el.</description>
+    </item>
+    
+    <item>
+      <title>Visibility</title>
+      <link>/020_application/030_visibility_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_application/030_visibility_1/</guid>
+      <description>Our application is exposed to the world and our clients have alredy started to trade. F5XC not only allows us the publish and protect our application but also to monitor the behaivour.
+  The main dashboard presents us with the overall status of our application.   We can monitor each and every requests including what has been sent by the client and the response and latency of the server.</description>
+    </item>
+    
+  </channel>
+</rss>
