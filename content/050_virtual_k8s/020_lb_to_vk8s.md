@@ -57,6 +57,6 @@ The last step will be to instruct the **Load Balancer** to send the relevant tra
 
 2. Change the routing config
 
-![](/images/6/Slide3.PNG)
+![](/images/7/Slide3.PNG)
 
 
