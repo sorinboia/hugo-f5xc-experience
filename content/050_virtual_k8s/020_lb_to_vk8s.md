@@ -27,7 +27,8 @@ The last step will be to instruct the **Load Balancer** to send the relevant tra
         "k8s_service": {
           "service_name": "arcadia-stocks.::namespace::",
           "site_locator": {
-            "virtual_site": {              
+            "site": {             
+              "tenant": "ves-io", 
               "namespace": "system",
               "name": "tn2-lon",
               "kind": "site"
