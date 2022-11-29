@@ -28,9 +28,9 @@ The last step will be to instruct the **Load Balancer** to send the relevant tra
           "service_name": "arcadia-stocks.::namespace::",
           "site_locator": {
             "virtual_site": {              
-              "namespace": "::namespace::",
-              "name": "ny-vsite",
-              "kind": "virtual_site"
+              "namespace": "system",
+              "name": "tn2-lon",
+              "kind": "site"
             }
           },
           "vk8s_networks": {}
@@ -39,7 +39,7 @@ The last step will be to instruct the **Load Balancer** to send the relevant tra
       }
     ],
     "no_tls": {},
-    "port": 8080,
+    "port": 80,
     "same_as_endpoint_port": {},
     "healthcheck": [
       {
