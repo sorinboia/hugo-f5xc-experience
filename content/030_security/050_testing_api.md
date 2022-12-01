@@ -6,10 +6,10 @@ weight = 50
 First we need to verify that the previously defined policy is working as expected
 
 
-1. Browse to `https://::makeid::.sales-public.f5demos.com/notanactualpage`  
+1. Browse to `http://::makeid::.sales-public.f5demos.com/notanactualpage`  
 You should be able to recive all the relevant HTML, JS, CSS and have rendered the 404 page.
 
-2. Browse to `https://::makeid::.sales-public.f5demos.com/v1/notanactualapi` 
+2. Browse to `http://::makeid::.sales-public.f5demos.com/v1/notanactualapi` 
 The request will be blocked with a 403 message and a **support ID**. Copy to the clipboard the **support ID**.
 
 ```
