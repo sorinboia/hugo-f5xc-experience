@@ -70,16 +70,8 @@ At the same time the **Login** and **User** services deal with sensetive data an
       "::makeid::.sales-public.f5demos.com"
     ],
     "http": {
-        "dns_volterra_managed": true,
-        "port": 80
-      },
-      "no_mtls": {},
-      "default_header": {},
-      "enable_path_normalize": {},
-      "non_default_loadbalancer": {},
-      "header_transformation_type": {
-        "default_header_transformation": {}
-      }
+      "dns_volterra_managed": true,
+      "port": 80
     },
     "advertise_on_public_default_vip": {},
     "default_route_pools": [
