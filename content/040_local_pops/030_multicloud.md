@@ -69,12 +69,9 @@ At the same time the **Login** and **User** services deal with sensetive data an
     "domains": [
       "::makeid::.sales-public.f5demos.com"
     ],
-    "https_auto_cert": {
-      "http_redirect": true,
-      "add_hsts": false,
-      "port": 443,
-      "tls_config": {
-        "default_security": {}
+    "http": {
+        "dns_volterra_managed": true,
+        "port": 80
       },
       "no_mtls": {},
       "default_header": {},
