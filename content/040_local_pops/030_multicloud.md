@@ -87,28 +87,7 @@ At the same time the **Login** and **User** services deal with sensetive data an
         "endpoint_subsets": {}
       }
     ],
-    "routes": [
-      {
-        "simple_route": {
-          "path": {
-            "prefix": "/v1/login"
-          },
-          "origin_pools": [
-            {
-              "pool": {
-                "tenant": "f5-sales-public-qdpwiibg",
-                "namespace": "::namespace::",
-                "name": "arcadia-onprem-origin-pool",
-                "kind": "origin_pool"
-              },
-              "weight": 1,
-              "priority": 1,
-              "endpoint_subsets": {}
-            }
-          ],
-          "auto_host_rewrite": {}
-        }
-      },
+    "routes": [      
       {
         "simple_route": {
           "path": {
