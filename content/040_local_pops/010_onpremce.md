@@ -63,20 +63,6 @@ This allows us to send the traffic to the application through an IPSEC tunnel an
           "outside_network": {}
         },
         "labels": {}
-      },
-      {
-        "private_ip": {
-          "ip": "10.1.1.6",
-          "site_locator": {
-            "site": {
-              "namespace": "system",
-              "name": "::ceOnPrem::",
-              "kind": "site"
-            }
-          },
-          "outside_network": {}
-        },
-        "labels": {}
       }
     ],
     "no_tls": {},
